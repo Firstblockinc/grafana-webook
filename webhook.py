@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-AGENT_BASE_URL = os.environ.get('AGENT_URL', 'http://172.20.0.84:22001')
+AGENT_BASE_URL = os.environ.get('AGENT_URL', 'http://172.17.0.84:22001')
 ALLOWED_ORIGIN = os.environ.get('CORS_ORIGIN', 'https://firstblock.grafana.net')
 
 app = Flask(__name__)
